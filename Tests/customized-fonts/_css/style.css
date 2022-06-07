@@ -1,0 +1,30 @@
+@font-face {
+    src: url('../_fonts/BringHeart.woff');
+    font-family: "bring";
+}
+
+@font-face {
+    src: url('../_fonts/Ancient-Medium.woff');
+    font-family: "medium";
+}
+
+@font-face {
+    font-family: "script";
+    src: url('../_fonts/MadelinaScript.woff');
+}
+
+h1 {
+    font-size: 6em;
+}
+
+#classe1 {
+    font-family: "bring";
+}
+
+#classe2 {
+    font-family: "medium";
+}
+
+#classe3 {
+    font-family: "script";
+}
