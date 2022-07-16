@@ -15,7 +15,6 @@
     <style>
         #conteudo {
             background: #dcdcdc;
-            width: 1300px;
             height: 400px;
             margin: auto;
             display: flex;
@@ -42,7 +41,7 @@
         }
 
         .item {
-            width: 100px;
+            /*width: 200px;*/
             height: 100px;
             background: white;
             border: 1px solid gray;
@@ -50,18 +49,28 @@
 
             /* Define a proporção de espaço ocupado por um item */
             flex-grow: 0;
+
+            /* Define a capacidade de encolhimento do item */
+            flex-shrink: 1;
+
+            /* Indica o tamanho inicial do flex item antes da distribuição do espaço restante */
+            flex-basis: 100px;
         }
 
         .item1 {
-            flex-grow: 1;
+            /*flex-grow: 1;*/
+            /*flex-shrink: 2;*/
+
         }
 
         .item2 {
-            flex-grow: 2;
+            flex-grow: 1;
+            /*flex-shrink: 2;*/
         }
 
         .item3 {
-            flex-grow: 3;
+            flex-grow: 2;
+            /*flex-shrink: 3;*/
         }
 
         /*
