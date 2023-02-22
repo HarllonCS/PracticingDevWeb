@@ -1,2 +1,2 @@
 # PracticingDevWeb
-Web development projects
+Web development tests and projects
