@@ -70,6 +70,11 @@ nav.navbar-transparente {
     color: black;
 }
 
+/* Setas do carousel */
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+
 /* Conteúdos */
 .caixa {
     padding: 20px 0;

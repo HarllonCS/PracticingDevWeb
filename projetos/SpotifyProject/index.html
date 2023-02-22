@@ -62,18 +62,39 @@
         <div class="container align-self-center">
             <div class="row">
                 <div class="col-md-12 capa">
-                    <!-- Botão "APROVEITE O SPOTIFY" -->
-                    <h1>Música para todos</h1>
-                    <a href="#" class="btn btn-lg btn-custom btn-roxo">
-                        Aproveite o Spotify Free
-                    </a>
-                    <!-- /fim Botão "APROVEITE O SPOTIFY" -->
+                    <div id="carousel-capa" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!-- Botão "APROVEITE O SPOTIFY" -->
+                                <h1>Música para todos</h1>
+                                <a href="#" class="btn btn-lg btn-custom btn-roxo">
+                                    Aproveite o Spotify Free
+                                </a>
+                                <!-- /fim Botão "APROVEITE O SPOTIFY" -->
 
-                    <!-- Botão "OBTER SPOTIFY PREMIUM" -->
-                    <a href="#" class="btn btn-lg btn-custom btn-branco">
-                        Obter Spotify Premium
-                    </a>
-                    <!-- /fim Botão "OBTER SPOTIFY PREMIUM" -->
+                                <!-- Botão "OBTER SPOTIFY PREMIUM" -->
+                                <a href="#" class="btn btn-lg btn-custom btn-branco">
+                                    Obter Spotify Premium
+                                </a>
+                                <!-- /fim Botão "OBTER SPOTIFY PREMIUM" -->
+                            </div>
+                            <div class="carousel-item">
+                                <!-- Botão "Ouça agora" -->
+                                <h1>As melhores rádios</h1>
+                                <a href="#" class="btn btn-lg btn-custom btn-branco">
+                                    <i class="fa-solid fa-music"></i> Ouça agora
+                                </a>
+                                <!-- /fim Botão "Ouça agora" -->
+                            </div>
+                        </div>
+
+                        <a href="#carousel-capa" class="carousel-control-prev" data-slide="prev">
+                            <i class="fa-solid fa-angle-left fa-2x"></i>
+                        </a>
+                        <a href="#carousel-capa" class="carousel-control-next" data-slide="next">
+                            <i class="fa-solid fa-angle-right fa-2x"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,7 +172,7 @@
                 <div class="col-md-2">
                     <img src="./imgs/spotify.svg" width="142">
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2"> <!-- Company -->
                     <h4>company</h4>
                     <ul class="navbar-nav">
                         <li><a href="#">Sobre</a></li>
@@ -159,24 +180,24 @@
                         <li><a href="#">Imprensa</a></li>
                         <li><a href="#">Novidades</a></li>
                     </ul>
-                </div>
-                <div class="col-md-2">
+                </div> <!-- /fim Company -->
+                <div class="col-md-2"> <!-- Comunidades -->
                     <h4>comunidades</h4>
                     <ul class="navbar-nav">
                         <li><a href="#">Artistas</a></li>
                         <li><a href="#">Desenvolvimento</a></li>
                         <li><a href="#">Marcas</a></li>
                     </ul>
-                </div>
-                <div class="col-md-2">
+                </div> <!-- /fim Comunidades -->
+                <div class="col-md-2"> <!-- Links Úteis -->
                     <h4>links úteis</h4>
                     <ul class="navbar-nav">
                         <li><a href="#">Ajuda</a></li>
                         <li><a href="#">Presentes</a></li>
                         <li><a href="#">Player da web</a></li>
                     </ul>
-                </div>
-                <div class="col-md-4">
+                </div> <!-- /fim Links Úteis -->
+                <div class="col-md-4"> <!-- Redes sociais -->
                     <ul class="navbar-nav d-inline">
                         <li>
                             <a href="#"><img src="./imgs/facebook.png"></a>
@@ -188,7 +209,7 @@
                             <a href="#"><img src="./imgs/twitter.png"></a>
                         </li>
                     </ul>
-                </div>
+                </div> <!-- /fim Redes sociais -->
             </div>
         </div>
     </footer> <!-- /fim Rodapé -->
