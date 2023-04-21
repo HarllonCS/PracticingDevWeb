@@ -1,0 +1,99 @@
+/* Set margin and padding of all elements to 0 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Bakground */
+body {
+    background: linear-gradient(#385b9c, #0f2244) fixed;
+    font-family: arial, sans-serif;
+}
+
+/* Header "FILL THE FORM" */
+header {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: whitesmoke;
+    text-transform: uppercase;
+    margin-top: 20px;
+    letter-spacing: 3px;
+}
+
+/* login screen */
+main {
+    background-color: whitesmoke;
+    width: 400px;
+    margin: 40px auto 0 auto;
+    border-radius: 8px;
+    padding: 20px 0px;
+}
+
+/* Input fields */
+.input-style, button, fieldset {
+    display: block;
+    margin: auto;
+}
+
+.input-style {
+    padding: 8px 3px;
+    font-size: 18px;
+    border-radius: 6px;
+    width: 70%;
+    border: 2px solid #335491;
+    background-color: #dae7f5;
+    margin-bottom: 22px;
+}
+
+fieldset {
+    width: 70%;
+    border: none;
+    margin: 20px auto 40px auto;
+}
+
+#radio-gens {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+#radio-gens label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+fieldset p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Submit button */
+button {
+    background-color: #3cac3c;
+    border: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px 0;
+    width: 90%;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+button:hover {background-color: #50b350;}
+
+/* Reuslt */
+#result {margin-top: 20px;}
+
+#result p {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #1d4b99;
+}
