@@ -21,6 +21,26 @@ header {
     letter-spacing: 3px;
 }
 
+header h1 {display: inline;}
+
+select {
+    display: block;
+    margin: 0 100px 0 auto;
+    padding: 5px;
+    font-size: 16px;
+    background-color: transparent;
+    color: whitesmoke;
+    cursor: pointer;
+    border-top-color: #355795;
+    border-right-color: #345694;
+    border-left-color: #355694;
+    border-bottom: 3px solid #193b77;
+}
+
+select:hover {border-color: none;}
+
+option {color: black;}
+
 /* login screen */
 main {
     background-color: whitesmoke;
@@ -52,16 +72,18 @@ fieldset {
     margin: 20px auto 40px auto;
 }
 
-#radio-gens {
+#radio-gens-pt, #radio-gens-en {
     display: flex;
     justify-content: space-between;
     margin-top: 35px;
 }
 
-#radio-gens label {
-    font-size: 20px;
-    cursor: pointer;
-}
+#radio-gens-en label, #radio-gens-pt label{cursor: pointer;}
+
+#radio-gens-en label {font-size: 20px;}
+
+#radio-gens-pt label {font-size: 16px;}
+
 
 fieldset p {
     text-align: center;

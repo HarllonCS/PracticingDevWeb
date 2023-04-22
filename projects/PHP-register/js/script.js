@@ -1,6 +1,10 @@
+// Variables
 var field = document.querySelectorAll('.input-style')
-var current_year = new Date().getFullYear()-1
 
+// change language
+function chooseLang(sec) {open(""+sec+"", "_parent")}
+
+// conditions for empty fields
 document.querySelector('button').addEventListener('click', () => {
     if (field[0].value.length == 0) {
         alert("ERROR: Insert a Username.")
