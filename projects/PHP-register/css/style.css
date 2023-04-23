@@ -23,6 +23,7 @@ header {
 
 header h1 {display: inline;}
 
+/* Select language */
 select {
     display: block;
     margin: 0 100px 0 auto;
@@ -34,8 +35,6 @@ select {
     cursor: pointer;
     border-radius: 5px;
 }
-
-/* select:hover {border-color: none;} */
 
 option {
     color: black;
