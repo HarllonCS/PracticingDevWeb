@@ -2,7 +2,7 @@
 var field = document.querySelectorAll('.input-style')
 
 // change language
-function chooseLang(sec) {open(""+sec+"", "_parent")}
+function selectLang(sec) {open(sec, "_parent")}
 
 // conditions for empty fields
 document.querySelector('button').addEventListener('click', () => {

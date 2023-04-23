@@ -10,7 +10,7 @@
 <body>
     <header> <!-- Header -->
         <h1>Fill the form</h1>
-        <select onchange="chooseLang(this.value)">
+        <select onchange="selectLang(this.value)">
             <option value="../pt-br/index.php">Português</option>
             <option value="./index.php" selected>English</option>
         </select>
