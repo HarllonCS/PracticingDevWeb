@@ -28,18 +28,19 @@ select {
     margin: 0 100px 0 auto;
     padding: 5px;
     font-size: 16px;
-    background-color: transparent;
+    background-color: #193b77;
+    border-color: #193b77;
     color: whitesmoke;
     cursor: pointer;
-    border-top-color: #355795;
-    border-right-color: #345694;
-    border-left-color: #355694;
-    border-bottom: 3px solid #193b77;
+    border-radius: 5px;
 }
 
-select:hover {border-color: none;}
+/* select:hover {border-color: none;} */
 
-option {color: black;}
+option {
+    color: black;
+    background-color: whitesmoke;
+}
 
 /* login screen */
 main {
