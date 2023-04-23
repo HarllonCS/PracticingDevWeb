@@ -13,6 +13,7 @@
         <select onchange="selectLang(this.value)">
             <option value="../pt-br/index.php">Português</option>
             <option value="./index.php" selected>English</option>
+            <option value="../es/index.php">Español</option>
         </select>
     </header> <!-- /end Header -->
 

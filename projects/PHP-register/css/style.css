@@ -72,13 +72,17 @@ fieldset {
     margin: 20px auto 40px auto;
 }
 
-#radio-gens-pt, #radio-gens-en {
+#radio-gens-pt,
+#radio-gens-en,
+#radio-gens-es {
     display: flex;
     justify-content: space-between;
     margin-top: 35px;
 }
 
-#radio-gens-en label, #radio-gens-pt label{cursor: pointer;}
+#radio-gens-en label,
+#radio-gens-pt label,
+#radio-gens-es label{cursor: pointer;}
 
 #radio-gens-en label {font-size: 20px;}
 

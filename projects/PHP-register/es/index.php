@@ -1,50 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Formulário PHP</title>
+    <title>PHP Form</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header> <!-- Header -->
-        <h1>Preencha o formulário</h1>
+        <h1>completa el formulario</h1>
         <select onchange="selectLang(this.value)">
-            <option value="./index.php" selected>Português</option>
+            <option value="../pt-br/index.php">Português</option>
             <option value="../en/index.php">English</option>
-            <option value="../es/index.php">Español</option>
+            <option value="./index.php" selected>Español</option>
         </select>
     </header> <!-- /end Header -->
 
     <main role="main"> <!-- Main -->
         <form method="get" action="./index.php"> <!-- form -->
             <!-- Username -->
-            <input class="input-style" type="text" name="name" autofocus placeholder="Usuário">
+            <input class="input-style" type="text" name="name" autofocus placeholder="Usuario">
             <!-- /end Username -->
             <!-- Email -->
-            <input class="input-style" type="email" name="email" placeholder="exemplo@email.com">
+            <input class="input-style" type="email" name="email" placeholder="ejemplo@email.com">
             <!-- /end Email -->
             <!-- Password -->
             <input class="input-style" type="password" name="password" placeholder="min.: 6 caracteres" minlength="6">
             <!-- /end Password -->
 
             <fieldset> <!-- Gender options -->
-                <p>Gênero</p>
-                <div id="radio-gens-pt">
+                <p>Género</p>
+                <div id="radio-gens-es">
                     <label> <!-- Male option -->
                         Masculino <input type="radio" name="gen" id="idM" value="M" checked>
                     </label> <!-- /end Male option -->
                     <label> <!-- Female option -->
-                        Feminino <input type="radio" name="gen" id="idF" value="F">
+                        Femenino <input type="radio" name="gen" id="idF" value="F">
                     </label> <!-- /end Female option -->
                     <label>
-                        Outro <input type="radio" name="gen" id="idO" value="X">
+                        Otro <input type="radio" name="gen" id="idX" value="X">
                     </label>
                 </div>
             </fieldset> <!-- /end Gender options -->
 
-            <button type="submit">Enviar</button>
+            <button type="submit">entregar</button>
         </form> <!-- /end form -->
 
         <div id="result"> <!-- Result -->
