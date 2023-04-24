@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#227a22, #006400) fixed;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+main {
+    background: whitesmoke;
+    width: 400px;
+    margin: 25px auto 0 auto;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin: 10px 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+div {
+    background: rgb(117, 218, 117);
+    padding: 18px 15px;
+    border-radius: 10px;
+}
+
+label, button {display: block;}
+
+label {
+    display: inline;
+    font-weight: bold;
+    font-size: 18px;
+    background: rgb(28, 145, 28);
+    padding: 4px 5px;
+    color: rgb(231, 231, 231);
+    border-radius: 5px;
+}
+
+input {
+    font-size: 20px;
+    padding: 8px 0;
+    text-indent: 8px;
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: rgb(231, 231, 231);
+}
+
+button {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 22px;
+    padding: 6px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgb(18, 175, 18);
+    color: whitesmoke;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+button:hover { background-color: rgb(17, 155, 17);}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.p-style {margin: 20px 0;}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a:hover {text-decoration: underline;}
