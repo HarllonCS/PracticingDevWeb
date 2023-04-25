@@ -4,10 +4,11 @@
 }
 
 body {
-    background: linear-gradient(#227a22, #006400) fixed;
+    background: linear-gradient(#1a7e1a, #004900) fixed;
     font-family: 'Trebuchet MS', sans-serif;
 }
 
+/* Content box */
 main {
     background: whitesmoke;
     width: 400px;
@@ -16,6 +17,7 @@ main {
     border-radius: 10px;
 }
 
+/* Title */
 h1 {
     text-align: center;
     font-size: 28px;
@@ -24,6 +26,7 @@ h1 {
     text-transform: uppercase;
 }
 
+/* Content */
 div {
     background: rgb(117, 218, 117);
     padding: 18px 15px;
@@ -38,21 +41,23 @@ label {
     font-size: 18px;
     background: rgb(28, 145, 28);
     padding: 4px 5px;
-    color: rgb(231, 231, 231);
+    color: whitesmoke;
     border-radius: 5px;
 }
 
+/* insert number field */
 input {
     font-size: 20px;
     padding: 8px 0;
-    text-indent: 8px;
+    text-indent: 10px;
     margin: 20px 0;
     width: 100%;
     border-radius: 5px;
     border: 1px solid transparent;
-    background-color: rgb(231, 231, 231);
+    background-color: whitesmoke;
 }
 
+/* Button "CALCULATE" */
 button {
     width: 90%;
     margin: 0 auto;
@@ -61,14 +66,15 @@ button {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    background: rgb(18, 175, 18);
+    background: #12af12;
     color: whitesmoke;
     border-radius: 8px;
     border: 1px solid transparent;
 }
 
-button:hover { background-color: rgb(17, 155, 17);}
+button:hover {background-color: #119b11;}
 
+/* Result text */
 p {
     font-size: 20px;
     text-align: center;
@@ -77,6 +83,7 @@ p {
 
 .p-style {margin: 20px 0;}
 
+/* Back link */
 a {
     font-size: 18px;
     text-decoration: none;

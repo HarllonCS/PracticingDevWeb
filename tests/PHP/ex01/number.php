@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <main role="main">
+    <main role="main"> <!-- Main content -->
         <div>
-            <?php 
+            <?php
+                // Variable to store number input information
                 $num = $_GET["number"] ?? 'undefined';
 
+                // Print results
                 echo "<p>Entered Number = ".$num."</p>";
                 echo "<p class=\"p-style\">Predecessor = ".($num - 1)."</p>";
                 echo "<p>Successor = ".($num + 1)."</p>";
             ?>
-            <a href="./index.html">Voltar</a>
+            <!-- Link to go back first page -->
+            <a href="./index.html">Back</a>
         </div>
-    </main>
+    </main> <!-- /end Main content -->
 </body>
 </html>
