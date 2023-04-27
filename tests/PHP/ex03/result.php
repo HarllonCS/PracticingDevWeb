@@ -12,9 +12,9 @@
         <h1>currency converter v1.0</h1> 
         <div>
             <?php
-                $num = (float)$_GET['num'] ?? 'undefined';
-                $dollar = 5.05;
-                $real_convert = $num / $dollar;
+                $num = $_GET['num'] ?? 'undefined';
+                $dollar = 5.03;
+                $real_convert = number_format(($num / $dollar), 2, ',', '.');
 
                 echo "<p>Real entered = R$$num</p>";
                 echo "<p class=\"p-style\">Dollar price = R$$dollar</p>";

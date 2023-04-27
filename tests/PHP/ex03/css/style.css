@@ -29,13 +29,14 @@ div {
     background: #75da75;
     padding: 18px 15px;
     border-radius: 10px;
-    margin: 25px auto;
+    margin: 25px auto 0 auto;
 }
 
 p {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
+    color: whitesmoke;
 }
 
 .p-style {margin: 20px 0;}
@@ -83,8 +84,10 @@ button:hover {background-color: #119b11;}
 
 /* Back link */
 a {
+    display: inline-block;
     font-size: 18px;
     text-decoration: none;
+    margin-top: 15px;
 }
 
 a:hover {text-decoration: underline;}
