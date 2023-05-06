@@ -13,7 +13,7 @@
             <p>Generate a random number between 0 and 100.</p>
             <div>
                 <?php
-                    echo "<p>".random_int(0, 100)."</p>";
+                    echo "<p>".mt_rand(0, 100)."</p>";
                 ?>
             </div>
             <button type="submit">Generate</button>

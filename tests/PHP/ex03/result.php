@@ -12,13 +12,16 @@
         <h1>currency converter v1.0</h1> 
         <div>
             <?php
-                $num = $_GET['num'] ?? 'undefined';
+                $currency = numfmt_create("us", NumberFormatter::CURRENCY);
+                $num = $_GET['num'] ?? 0;
                 $dollar = 5.03;
-                $real_convert = number_format(($num / $dollar), 2, ',', '.');
+                $real_convert = $num / $dollar;
 
-                echo "<p>Real entered = R$$num</p>";
-                echo "<p class=\"p-style\">Dollar price = R$$dollar</p>";
-                echo "<p>Converted = US$$real_convert</p>";
+                echo "<p>Dollar price = ".numfmt_format_currency($currency, $dollar, "USD")."</p>";
+
+                echo "<p class=\"p-style\">Real entered = ".numfmt_format_currency($currency, $num, "BRL")."</p>";
+
+                echo "<p>Converted = ".numfmt_format_currency($currency, $real_convert, "USD")."</p>";
             ?>
         </div>
         <a href="./index.html">Back</a>
