@@ -13,10 +13,16 @@
         <h1>Float Analyzer</h1>
         <div> <!-- PHP Code -->
             <?php 
-                $num = $_GET["num"] ?? 'undefined';
-                $num = number_format($num, 3, ',', '.');
+                $num = $_GET["num"] ?? 0;
+                // $num = number_format($num, 3, ',', '.');
+                $integer = (int) $num;
+                $float = $num - $integer;
 
-                echo "<p>Analyzing number <strong>$num</strong>...</p>";
+                echo "<p>Analyzing number <strong>".number_format($num, 3, ',', '.')."</strong>...</p>";
+
+                echo "<p>Integer: <strong>".number_format($integer, 0, '', '.')."</strong></p>";
+
+                echo "<p>Float: <strong>".number_format($float, 3, ',', '')."</strong></p>"
             ?>
         </div> <!-- /end PHP Code -->
         <!-- /end Titlte -->
