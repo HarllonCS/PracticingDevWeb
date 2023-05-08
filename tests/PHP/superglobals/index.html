@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Superglobals on PHP</title>
+    <title>PHP | SuperGlobals</title>
 </head>
 <body>
-    <main>
-        <pre>
-            <?php 
-                echo "<h1>Superglobal GET</h1>";
-                var_dump($_GET);
-            ?>
-        </pre>
-    </main>
+    <form action="./super.php" method="post">
+        <label for="n">Number:</label>
+        <input type="number" name="num" id="n">
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
