@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background and font */
+body {
+    background-color: #2ea5d4;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.box {
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+/* First div */
+#anatomy {
+    width: 550px;
+    margin: 20px auto 20px auto;
+    padding: 10px 8px;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Form */
+form {
+    background-color: #b5eaff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 80%;
+    margin: 20px auto 10px auto;
+}
+
+/* Label and inputs */
+.data {margin-bottom: 15px;}
+
+label {
+    background-color: #0a7eb4;
+    color: whitesmoke;
+    border-radius: 3px;
+    padding: 1px 4px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px 0;
+    text-indent: 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 100%;
+    font-size: 20px;
+}
+
+/* Analyze button */
+button {
+    width: 70%;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    background-color: #08c6e7;
+    padding: 8px 0;
+    border: 0 solid black;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: .4s;
+    color: #ebebeb;
+}
+
+button:hover {background-color: #099cc9;}
+
+/* Second div */
+#result {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+h2 {
+    font-size: 22px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#numbers {
+    display: flex;
+    width: 20%;
+    margin: 20px auto 0 auto;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+#first {
+    border-right: 2px solid black;
+    width: 80px;
+}
+
+#second {text-indent: 8px;}
+
+#p-sec {
+    border-bottom: 2px solid black;
+    width: 50px;
+}
