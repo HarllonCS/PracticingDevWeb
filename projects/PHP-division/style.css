@@ -92,20 +92,20 @@ h2 {
 
 #numbers {
     display: flex;
-    width: 20%;
+    width: 25%;
     margin: 20px auto 0 auto;
     padding-bottom: 20px;
     font-size: 20px;
 }
 
-#first {
+#num-first {
     border-right: 2px solid black;
     width: 80px;
 }
 
-#second {text-indent: 8px;}
+#num-second {text-indent: 8px;}
 
-#p-sec {
+.divider {
     border-bottom: 2px solid black;
-    width: 50px;
+    width: 80px;
 }

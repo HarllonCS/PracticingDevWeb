@@ -8,17 +8,22 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <?php 
+        $dividend = $_GET['v1'] ?? 0;
+        $divider = $_GET['v2'] ?? 1;
+    ?>
+
     <div id="anatomy" class="box"> <!-- First div -->
         <h1>Anatomy of a Division</h1>
-        <form action="./index.php" method="get">
+        <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <div class="data"> <!-- Dividend -->
                 <label for="num1">Dividend</label> <br>
-                <input type="number" name="dividend" id="num1" value="0" autofocus>
+                <input type="number" name="v1" id="num1" value="<?=$dividend?>" autofocus>
             </div> <!-- /end Dividend -->
 
             <div class="data"> <!-- Divider -->
                 <label for="num2">Divider</label> <br>
-                <input type="number" name="divider" id="num2" value="1">
+                <input type="number" name="v2" id="num2" value="<?=$divider?>">
             </div> <!-- /end Divider -->
 
             <button type="submit">Analyze</button>
@@ -28,14 +33,16 @@
     <div id="result" class="box"> <!-- Second div -->
         <h2>Division Structure</h2>
         <div id="numbers">
-            <div id="first">
-                <p>5</p>
-                <p>1</p>
-            </div>
-            <div id="second">
-                <p id="p-sec">0</p>
-                <p>1</p>
-            </div>
+            <?php
+                $rest = $dividend % $divider;
+                $result = $dividend / $divider;
+
+                echo "<div id='num-first'>";
+                echo "<p>$dividend</p><p>$rest</p></div>";
+                echo "<div id='num-second'>";
+                echo "<p class='divider'>$divider</p>";
+                echo "<p>$result</p></div>";
+            ?>
         </div>
     </div> <!-- /end Second div -->
 </body>
