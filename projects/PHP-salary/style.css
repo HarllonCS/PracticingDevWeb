@@ -59,6 +59,8 @@ input {
     font-size: 20px;
 }
 
+p {margin-bottom: 15px;}
+
 /* Analyze button */
 button {
     width: 70%;
@@ -76,32 +78,3 @@ button {
 }
 
 button:hover {background-color: #099cc9;}
-
-/* Second div */
-#content-box2 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
-}
-
-h2 {
-    font-size: 22px;
-    text-align: center;
-    padding-top: 10px;
-}
-
-#numbers {
-    display: flex;
-    width: 43%;
-    margin: 20px auto 0 auto;
-    padding-bottom: 20px;
-    font-size: 20px;
-}
-
-p {padding: 25px;}
-
-#col-first {border-right: 2px solid black;}
-
-#col-second {text-indent: 8px;}
-
-.divider {border-bottom: 2px solid black;}

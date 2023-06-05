@@ -13,7 +13,7 @@
         $divider = $_GET['v2'] ?? 1;
     ?>
 
-    <div id="anatomy" class="box"> <!-- First div -->
+    <div id="content-box" class="box"> <!-- First div -->
         <h1>Anatomy of a Division</h1>
         <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <div class="data"> <!-- Dividend -->
@@ -30,7 +30,7 @@
         </form>
     </div> <!-- /end First div -->
 
-    <div id="result" class="box"> <!-- Second div -->
+    <div id="content-box2" class="box"> <!-- Second div -->
         <h2>Division Structure</h2>
         <div id="numbers">
             <?php
