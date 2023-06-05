@@ -18,12 +18,12 @@
         <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <div class="data"> <!-- Dividend -->
                 <label for="num1">Dividend</label> <br>
-                <input type="number" name="v1" id="num1" value="<?=$dividend?>" autofocus>
+                <input type="number" name="v1" id="num1" value="<?=$dividend?>" step=".05" autofocus>
             </div> <!-- /end Dividend -->
 
             <div class="data"> <!-- Divider -->
                 <label for="num2">Divider</label> <br>
-                <input type="number" name="v2" id="num2" value="<?=$divider?>">
+                <input type="number" name="v2" id="num2" value="<?=$divider?>" step=".05">
             </div> <!-- /end Divider -->
 
             <button type="submit">Analyze</button>
@@ -37,11 +37,11 @@
                 $rest = $dividend % $divider;
                 $result = $dividend / $divider;
 
-                echo "<div id='num-first'>";
+                echo "<div id='col-first'>";
                 echo "<p>$dividend</p><p>$rest</p></div>";
-                echo "<div id='num-second'>";
+                echo "<div id='col-second'>";
                 echo "<p class='divider'>$divider</p>";
-                echo "<p>$result</p></div>";
+                echo "<p>".number_format($result, 3)."</p></div>";
             ?>
         </div>
     </div> <!-- /end Second div -->
