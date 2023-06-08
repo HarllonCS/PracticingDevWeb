@@ -8,20 +8,28 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <?php $minSal = 1380;?>
+    <?php
+        $minSal = 1380;
+        $currency = numfmt_create("en", NumberFormatter::CURRENCY);
+    ?>
 
     <div id="content-box" class="box">
         <h1>Report Your Salary</h1>
         <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <div class="data">
-                <label for="sal">Salary(R$)</label>
-                <input type="number" name="salary" id="sal">
+                <label for="sal">Salary (R$)</label>
+                <input type="number" name="salary" id="sal" value="<?=$minSal?>" autofocus>
             </div>
-
-            <p>Minimum Salary: <strong>R$ <?=number_format($minSal, 2, ',', '.')?></strong></p>
-
+            <?="<p>Minimum Salary: <strong>".numfmt_format_currency($currency, $minSal, "BRL")."</strong></p>";?>
             <button type="submit">Calculate</button>
         </form>
+    </div>
+
+    <div id="content-box2" class="box">
+        <h2>Final Result</h2>
+        <?php 
+            echo "<p class='res'>Earned salary: <strong>".numfmt_format_currency($currency, $minSal, "BRL")."</strong></p>";
+        ?>
     </div>
 </body>
 </html>

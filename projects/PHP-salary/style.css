@@ -43,7 +43,7 @@ label {
     background-color: #0a7eb4;
     color: whitesmoke;
     border-radius: 3px;
-    padding: 1px 4px;
+    padding: 2px 6px 3px 6px;
     font-weight: bold;
     font-size: 14px;
     display: inline-block;
@@ -54,7 +54,7 @@ input {
     padding: 5px 0;
     text-indent: 8px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #949494;
     width: 100%;
     font-size: 20px;
 }
@@ -64,12 +64,12 @@ p {margin-bottom: 15px;}
 /* Analyze button */
 button {
     width: 70%;
-    font-size: 16px;
+    font-size: 18px;
     display: block;
     margin: 0 auto;
     background-color: #08c6e7;
     padding: 8px 0;
-    border: 0 solid black;
+    border: 1px solid transparent;
     cursor: pointer;
     font-weight: bold;
     border-radius: 8px;
@@ -78,3 +78,18 @@ button {
 }
 
 button:hover {background-color: #099cc9;}
+
+/* Second div */
+#content-box2 {
+    margin: 0 auto;
+    width: 500px;
+}
+
+h2 {
+    font-size: 22px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.res {text-align: center;}
