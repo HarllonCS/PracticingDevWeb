@@ -37,8 +37,6 @@ form {
 }
 
 /* Label and inputs */
-.data {margin-bottom: 15px;}
-
 label {
     background-color: #0a7eb4;
     color: whitesmoke;
@@ -57,6 +55,7 @@ input {
     border: 1px solid #949494;
     width: 100%;
     font-size: 20px;
+    margin-bottom: 15px;
 }
 
 p {margin-bottom: 15px;}
@@ -92,4 +91,8 @@ h2 {
     margin-bottom: 10px;
 }
 
-.res {text-align: center;}
+.res {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
