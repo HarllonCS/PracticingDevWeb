@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <?php // variable $num to store standard valuel
+    <?php // variable $num to store standard value
         $num = $_GET["number"] ?? 1;
     ?>
     <!-- First box -->
