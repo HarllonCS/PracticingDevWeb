@@ -25,7 +25,7 @@
 
     <div id="content-box2" class="box">
         <h2>Final Result</h2>
-        <?php 
+        <?php
             echo "<p class='res'>Earned salary: <strong>".numfmt_format_currency($currency, $minSal, "BRL")."</strong></p>";
         ?>
     </div>
