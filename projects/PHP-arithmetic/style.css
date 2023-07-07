@@ -15,6 +15,7 @@ main, section {background-color: whitesmoke;}
 main {
 	width: 800px;
 	margin: 20px auto 35px auto;
+	padding-bottom: 25px;
 	border-radius: 10px;
 	box-shadow: 0 8px 12px 6px rgba(0, 0, 0, .350);
 }
@@ -34,7 +35,7 @@ form {
 	background-color: rgba(180, 120, 214, .450);
 	padding: 0 10px;
 	width: 75%;
-	margin: 0 auto 35px auto;
+	margin: 0 auto;
 	border-radius: 6px;
 	padding: 10px 15px;
 }
@@ -66,12 +67,12 @@ input {
 }
 
 /* Calculate button */
-#btn {padding-bottom: 1px;}
+
+#btn {padding-bottom: 10px}
 
 button {
 	display: block;
 	margin: 0 auto;
-	margin-bottom: 25px;
 	font-size: 22px;
 	background-color: #873db3;
 	color: whitesmoke;
