@@ -43,7 +43,7 @@ form {
 /* Labels and inputs */
 .box {margin-bottom: 16px;}
 
-.lb-n {font-size: 18px;}
+.box span {font-size: 18px;}
 
 label {
 	display: inline-block;
@@ -106,3 +106,5 @@ p {
 	padding-bottom: 8px;
 	text-transform: capitalize;
 }
+
+#res span {color: darkred;}
