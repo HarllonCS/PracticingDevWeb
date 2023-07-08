@@ -38,8 +38,10 @@
 		
 		<div style="margin-top: 10px;">
 			<?php
+				$cost = $price*$readjust/100;
+				
 				echo "<p>Product Price = <span>$price</span></p>";
-				echo "<p><span>$readjust%</span> of Increase =</p>"
+				echo "<p><span>$readjust%</span> of Increase = $cost</p>"
 			?>
 		</div>
 	</section>
