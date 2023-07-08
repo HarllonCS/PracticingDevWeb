@@ -10,7 +10,8 @@
 </head>
 <body>
 	<?php
-		$birthYear = 2000;
+		$birthYear = $_GET['birth_year'] ?? 2000;
+		$actualYear = $_GET['year'] ?? date('Y');
 	?>
 	<main role="main"> <!-- Main content -->
 		<h1>Calculating age</h1>
@@ -22,8 +23,8 @@
 			</div> <!-- User year of birth /end -->
 			
 			<div class="box">
-				<label for="n2">Year</label>
-				<input type="number" name="year" id="n2" value="<?=date('Y')?>">
+				<label for="n2">Year (atual year: <?=$actualYear?>)</label>
+				<input type="number" name="year" id="n2" value="<?=$actualYear?>">
 			</div>
 			
 			<div id="btn"> <!-- Button -->
@@ -34,6 +35,12 @@
 	
 	<section>
 		<h2>Results</h2>
+		
+		<?php
+			$age = $actualYear - $birthYear;
+			
+			echo "<p>Age = <span>$age</span></p>";
+		?>
 	</section>
 </body>
 </html>
