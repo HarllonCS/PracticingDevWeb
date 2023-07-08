@@ -41,8 +41,6 @@ form {
 }
 
 /* Labels and inputs */
-.box {margin-bottom: 16px;}
-
 label {
 	display: inline-block;
 	background-color: #873db3;
@@ -62,11 +60,10 @@ input {
 	border: 1px solid gray;
 	border-radius: 4px;
 	text-indent: 10px;
+	
 }
 
 /* Calculate button */
-#btn {padding-bottom: 10px}
-
 button {
 	display: block;
 	margin: 0 auto;
@@ -100,4 +97,7 @@ p {
 	padding-bottom: 10px;
 }
 
-span {color: darkred;}
+span {
+	color: darkred;
+	font-weight: bold;
+}

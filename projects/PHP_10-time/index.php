@@ -17,17 +17,17 @@
 		<h1>Calculating age</h1>
 		
 		<form method="get" action="<?=$_SERVER['PHP_SELF']?>">
-			<div class="box"> <!-- User year of birth -->
+			<div style="margin-bottom: 16px;"> <!-- User year of birth -->
 				<label for="n1">Year of Birth</label>
 				<input type="number" name="birth_year" id="n1" min="1800" value="<?=$birthYear?>">
 			</div> <!-- User year of birth /end -->
 			
-			<div class="box">
+			<div style="margin-bottom: 16px;">
 				<label for="n2">Year (atual year: <?=$actualYear?>)</label>
 				<input type="number" name="year" id="n2" value="<?=$actualYear?>">
 			</div>
 			
-			<div id="btn"> <!-- Button -->
+			<div style="padding-bottom: 10px"> <!-- Button -->
 				<button type="submit">Calculate age</button>
 			</div> <!-- Button /end -->
 		</form>
