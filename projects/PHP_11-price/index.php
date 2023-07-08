@@ -16,21 +16,32 @@
 	<main role="main">
 		<h1>Price readjuster</h1>
 		
-		<form action="<?=$_SERVE['PHP_SELF']?>" method="get">
-			<div class="box">
+		<form action="<?=$_SERVER['PHP_SELF']?>" method="get">
+			<div style="margin-bottom: 16px;">
 				<label for="price">Product Price (R$)</label>
-				<input type="number" id="price" name="price" min="1" value="<?=$price?>" autofocus>
+				<input type="number" id="price" name="price" min="1" step=".01" value="<?=$price?>" autofocus>
 			</div>
 			
-			<div class="box">
-				<label for="readjust">Readjustment percentage</label>
-				<input type="range" id="readjust" name="readjust" value="<?=$readjust?>">
+			<div style="margin-bottom: 16px;">
+				<label for="readjust">Readjustment percentage (<span style="color: #d895fc;"><?=$readjust?>%</span>)</label>
+				<input type="range" id="readjust" name="readjust" value="<?=$readjust?>" step=".1">
 			</div>
 			
-			<div id="btn">
+			<div style="padding-bottom: 6px;">
 				<button type="submit">Readjust</button>
 			</div>
 		</form>
 	</main>
+	
+	<section>
+		<h2>Results</h2>
+		
+		<div style="margin-top: 10px;">
+			<?php
+				echo "<p>Product Price = <span>$price</span></p>";
+				echo "<p><span>$readjust%</span> of Increase =</p>"
+			?>
+		</div>
+	</section>
 </body>
 </html>
