@@ -12,6 +12,7 @@
 	<?php
 		$birthYear = $_GET['birth_year'] ?? 2000;
 		$actualYear = $_GET['year'] ?? date('Y');
+		$age = $actualYear - $birthYear;
 	?>
 	<main role="main"> <!-- Main content -->
 		<h1>Calculating age</h1>
@@ -36,11 +37,7 @@
 	<section>
 		<h2>Results</h2>
 		
-		<?php
-			$age = $actualYear - $birthYear;
-			
-			echo "<p>Age = <span>$age</span></p>";
-		?>
+		<?="<p>Age = <span>$age</span></p>"?>
 	</section>
 </body>
 </html>

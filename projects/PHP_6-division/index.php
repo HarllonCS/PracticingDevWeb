@@ -35,13 +35,13 @@
         <div id="numbers">
             <?php
                 $rest = $dividend % $divider;
-                $result = $dividend / $divider;
+                $result = intdiv($dividend, $divider);
 
                 echo "<div id='col-first'>";
                 echo "<p>$dividend</p><p>$rest</p></div>";
                 echo "<div id='col-second'>";
                 echo "<p class='divider'>$divider</p>";
-                echo "<p>".number_format($result, 3)."</p></div>";
+                echo "<p>$result</p></div>";
             ?>
         </div>
     </div> <!-- /end Second div -->

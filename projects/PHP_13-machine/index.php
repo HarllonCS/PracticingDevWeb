@@ -29,10 +29,10 @@
 		
 		<div id="res">
 			<?php
-				echo "<p>R$100 Note</p>";
-				echo "<p>R$50 Note</p>";
-				echo "<p>R$10 Note</p>";
-				echo "<p>R$5 Note</p>";
+				echo "<p>R$100 Note = <span>x</span></p>";
+				echo "<p>R$50 Note = <span>x</span></p>";
+				echo "<p>R$10 Note = <span>x</span></p>";
+				echo "<p>R$5 Note = <span>x</span></p>";
 			?>
 		</div>
 	</section>
