@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Background and font */
+body {
+	background: linear-gradient(#922fcc, #7325a1) fixed;
+	font-family: Arial, sans-serif;
+}
+
+main, section {background-color: whitesmoke;}
+
+/* Main content */
+main {
+	width: 700px;
+	margin: 25px auto 40px auto;
+	padding-bottom: 8px;
+	border-radius: 10px;
+}
+
+h1 {
+	text-align: center;
+	padding: 15px 0;
+	text-transform: uppercase;
+}
+
+form {
+	background-color: rgba(180, 120, 214, .450);
+	padding: 6px;
+	width: 70%;
+	margin: 0 auto;
+	border-radius: 8px;
+}
+
+/* Labels e inputs */
+label {
+	display: inline-block;
+	background-color: #873db3;
+	color: whitesmoke;
+	margin-bottom: 4px;
+	padding: 2px 8px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+input {
+	width: 100%;
+	font-size: 16px;
+	padding: 4px 0;
+	text-indent: 4px;
+}
+
+small {
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+/* Button */
+button {
+	display: block;
+	background-color: #873db3;
+	color: whitesmoke;
+	border: 1px solid transparent;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 20px;
+	margin: 25px auto 10px auto;
+	text-transform: uppercase;
+	padding: 10px 20px 9px 20px;
+	cursor: pointer;
+}
+
+button:hover {background-color: #922fcc;}
+
+/* Results */
+section {
+	width: 500px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 8px;
+}
+
+#res {margin-top: 15px;}
+
+p {margin-bottom: 10px;}
