@@ -42,21 +42,23 @@
 			<!-- Warning -->
 			<small>*Available Notes: <strong><?=$hundredF?></strong>, <strong><?=$fiftyF?></strong>, <strong><?=$tenF?></strong> e <strong><?=$fiveF?></strong></small>
 			
-			<button type="submit">Withdraw money</button> <!-- Withdraw Button -->
+			<button type="submit">Take the Money</button> <!-- Withdraw Button -->
 		</form>
 	</main> <!-- Main content /end -->
 	
 	<section> <!-- Second content -->
 		<h2>Results</h2>
+
+		<p style="margin-top: 20px;">Money taken: <strong><?=numfmt_format_currency($currency, $money, "BRL")?></strong></p>
 		
 		<div id="res"> <!-- Results -->
-			<p><strong><?=$hundredF?></strong> Note = <strong class="note"><?=$hundredDiv?></strong></p>
+			<p><strong><?=$hundredF?></strong> Note = <strong class="note">x<?=$hundredDiv?></strong></p>
 
-			<p><strong><?=$fiftyF?></strong> Note = <strong class="note"><?=$fiftyDiv?></strong></p>
+			<p><strong><?=$fiftyF?></strong> Note = <strong class="note">x<?=$fiftyDiv?></strong></p>
 
-			<p><strong><?=$tenF?></strong> Note = <strong class="note"><?=$tenDiv?></strong></p>
+			<p><strong><?=$tenF?></strong> Note = <strong class="note">x<?=$tenDiv?></strong></p>
 
-			<p><strong><?=$fiveF?></strong> Note = <strong class="note"><?=$fiveDiv?></strong></p>
+			<p><strong><?=$fiveF?></strong> Note = <strong class="note">x<?=$fiveDiv?></strong></p>
 		</div> <!-- Results /end -->
 	</section> <!-- Second content /end -->
 </body>

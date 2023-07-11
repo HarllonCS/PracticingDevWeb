@@ -5,7 +5,7 @@
 
 /* Background and font */
 body {
-	background: linear-gradient(#922fcc, #7325a1) fixed;
+	background: linear-gradient(#922fcc, #491766) fixed;
 	font-family: Arial, sans-serif;
 }
 
@@ -87,7 +87,7 @@ section {
 }
 
 #res {
-	margin-top: 25px;
+	margin-top: 15px;
 	padding-bottom: 10px;
 }
 
