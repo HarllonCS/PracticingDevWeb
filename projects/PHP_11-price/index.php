@@ -10,8 +10,10 @@
 </head>
 <body>
 	<?php
+		$currency = numfmt_create("en", NumberFormatter::CURRENCY);
 		$price = $_GET['price'] ?? 0;
 		$readjust = $_GET['readjust'] ?? 20;
+		$cost = $price + ($price*$readjust/100);
 	?>
 	<main role="main">
 		<h1>Price readjuster</h1>
@@ -23,7 +25,7 @@
 			</div>
 			
 			<div style="margin-bottom: 16px;">
-				<label for="readjust">Readjustment percentage (<span style="color: #d895fc;"><?=$readjust?>%</span>)</label>
+				<label for="readjust">Readjustment percentage (<span id="percent" style="color: #d895fc;"><?=$readjust?></span>%)</label>
 				<input type="range" id="readjust" name="readjust" value="<?=$readjust?>" step=".1">
 			</div>
 			
@@ -37,13 +39,11 @@
 		<h2>Results</h2>
 		
 		<div style="margin-top: 10px;">
-			<?php
-				$cost = $price*$readjust/100;
-				
-				echo "<p>Product Price = <span>$price</span></p>";
-				echo "<p><span>$readjust%</span> of Increase = $cost</p>"
-			?>
+			<p>Product Price = <span><?=numfmt_format_currency($currency, $price, "BRL")?></span></p>
+			<p><span><?=$readjust?>%</span> of Increase = <span><?=numfmt_format_currency($currency, $cost, "BRL")?></span></p>
 		</div>
 	</section>
+
+	<script src="./script.js"></script>
 </body>
 </html>

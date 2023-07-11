@@ -1,0 +1,1 @@
+readjust.addEventListener("input", () => percent.innerText = readjust.value)
