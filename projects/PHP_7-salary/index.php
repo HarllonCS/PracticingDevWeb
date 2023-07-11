@@ -12,6 +12,10 @@
         $currency = numfmt_create("en", NumberFormatter::CURRENCY);
         $minSal =  1320;
 		$salary = $_GET['salary'] ?? $minSal;
+
+        $amountSal = intdiv($salary, $minSal);
+		$restSal = numfmt_format_currency($currency, $salary % $minSal, "BRL");
+		$salaryF = numfmt_format_currency($currency, $salary, "BRL");
     ?>
     <div id="content-box" class="box">
         <h1>Report Your Salary</h1>
@@ -27,14 +31,8 @@
         <h2>Final Result</h2>
         
 		<div id="res">
-			<?php
-				$amountSal = intdiv($salary, $minSal);
-				$restSal = numfmt_format_currency($currency, $salary % $minSal, "BRL");
-				$salaryF = numfmt_format_currency($currency, $salary, "BRL");
-				
-				echo "<p>User Salary = <span>$salaryF</span></p>";
-				echo "<p>Amount of Mininum Salary = <span>$amountSal + $restSal</span></p>";
-			?>
+			<p>User Salary = <span><?=$salaryF?></span></p>
+			<p>Amount of Mininum Salary = <span><?=$amountSal?> + <?=$restSal?></span></p>
 		</div>
     </div>
 </body>

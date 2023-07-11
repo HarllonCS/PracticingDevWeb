@@ -15,7 +15,7 @@ main, section {background-color: whitesmoke;}
 main {
 	width: 700px;
 	margin: 25px auto 40px auto;
-	padding-bottom: 8px;
+	padding-bottom: 30px;
 	border-radius: 10px;
 }
 
@@ -47,8 +47,10 @@ label {
 input {
 	width: 100%;
 	font-size: 16px;
-	padding: 4px 0;
+	padding: 8px 0;
 	text-indent: 4px;
+	border: 1px solid gray;
+	border-radius: 6px;
 }
 
 small {
@@ -70,6 +72,8 @@ button {
 	text-transform: uppercase;
 	padding: 10px 20px 9px 20px;
 	cursor: pointer;
+	letter-spacing: 2px;
+	font-family: 'Trebuchet MS', sans-serif;
 }
 
 button:hover {background-color: #922fcc;}
@@ -82,8 +86,11 @@ section {
 	border-radius: 8px;
 }
 
-#res {margin-top: 15px;}
+#res {
+	margin-top: 25px;
+	padding-bottom: 10px;
+}
 
-p {margin-bottom: 10px;}
+p {margin-bottom: 15px;}
 
-span {color: darkred;}
+.note {color: darkred;}
