@@ -1,16 +1,16 @@
 @font-face {
-    src: url('../_fonts/BringHeart.woff');
+    src: url('../src/fonts/BringHeart.woff');
     font-family: "bring";
 }
 
 @font-face {
-    src: url('../_fonts/Ancient-Medium.woff');
+    src: url('../src/fonts/Ancient-Medium.woff');
     font-family: "medium";
 }
 
 @font-face {
     font-family: "script";
-    src: url('../_fonts/MadelinaScript.woff');
+    src: url('../src/fonts/MadelinaScript.woff');
 }
 
 h1 {
