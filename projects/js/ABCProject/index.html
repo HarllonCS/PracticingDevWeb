@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>JavaScript - A-B-C</title>
+    <title>Desafio A-B-C</title>
 
     <script>
         // Iniciar variáveis
-        var a = 10
-        var b = 20
-        var c = null
+        let a = 10
+        let b = 20
+        let c = null
 
-        // Mostrar valor das variáveis no body
+        // Mostrar valores das variáveis
         document.write(`<h1>A = ${a}</h1>`)
         document.write(`<h1>B = ${b}</h1>`)
         document.write(`<h1>C = ${c}</h1>`)
@@ -20,10 +20,11 @@
         document.write(`<hr>`)
 
         // Inverter valores
-        c = b
-        b = a
-        a = c
-        
+        c = b // "C" recebe 10 do "A"
+
+        b = a // "A" recebe 20 do "B"
+
+        a = c // "B" recebe 10 que antes era do "A" e agora é do "C"
         
         // Mostrar valores invertidos
         document.write(`<h1>A = ${a}</h1>`)
