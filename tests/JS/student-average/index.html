@@ -13,11 +13,15 @@
         let average = 7
         let skipsMax = 15
 
-        if (grade >= average && skips <= skipsMax) {
-            document.write('<h2>Approved!</h2>')
-        } else {
-            document.write('<h2>Disapproved!</h2>')
-        }
+        // if (grade >= average && skips <= skipsMax) {
+        //     document.write('<h2>Approved!</h2>')
+        // } else {
+        //     document.write('<h2>Disapproved!</h2>')
+        // }
+
+        let result = (grade >= average && skips <= skipsMax) ? 'Approved!' : 'Disapproved!'
+
+        document.write(`<h2>${result.toUpperCase()}</h2>`)
     </script>
 </body>
 </html>
