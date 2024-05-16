@@ -8,10 +8,12 @@
 </head>
 <body>
     <script>
-        let grade = prompt('Insert the student\'s grade:')
+        let grade = prompt('Type the student\'s grade:')
+        let skips = prompt('Type the number of skips:')
         let average = 7
+        let skipsMax = 15
 
-        if (grade >= average) {
+        if (grade >= average && skips <= skipsMax) {
             document.write('<h2>Approved!</h2>')
         } else {
             document.write('<h2>Disapproved!</h2>')
