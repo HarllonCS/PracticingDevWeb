@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Age Group</title>
+</head>
+<body>
+    <script>
+        let age = prompt('Type your age:')
+        let result = null
+
+        if (age >= 0 && age < 15) {
+            result = 'child'            
+        } else if (age >= 15 && age < 30) {
+            result = 'young'
+        } else if (age >= 30 && age < 60) {
+            result = 'adult'
+        } else {
+            result = 'elderly'
+        }
+
+        document.write(`</h2>Your age is ${age} and you're a/an ${result}.</h2>`)
+    </script>
+</body>
+</html>
